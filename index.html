@@ -234,6 +234,8 @@
         <label><input type="radio" name="UK Driving Licence" value="Yes">Yes</label>
         <label><input type="radio" name="UK Driving Licence" value="No">No</label>
       </div>
+<label>UK Driving Licence Number</label>
+      <input type="text" name="UK Driving Licence Number" required>
 
       <label for="licence-expiry">Driving Licence Expiry Date:</label>
 <input type="date" id="licence-expiry" name="Licence Expiry Date" required>
@@ -364,6 +366,18 @@ I confirm that the information provided is true and complete. I consent to Baaz 
 <input type="date" id="declaration-date" name="Declaration Date" required>
 
 <label><input type="checkbox" name="Signature Confirmed" required> I confirm this serves as my digital signature.</label>
+     <!-- Additional Comments / Notes -->
+<div class="form-group">
+  <label for="additional_notes"><b>Additional Comments / Notes</b></label>
+  <textarea 
+    id="additional_notes" 
+    name="additional_notes" 
+    placeholder="Write any additional information or notes here..." 
+    rows="4"
+    style="width: 100%; resize: vertical;"
+  ></textarea>
+</div>
+
 
       <h4>Data Protection & Privacy Notice</h4>
 <p>
@@ -378,4 +392,5 @@ Your personal data will be stored securely and processed in accordance with UK G
 
 
 </html>
+
 
