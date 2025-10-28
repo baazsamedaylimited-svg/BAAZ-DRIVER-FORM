@@ -193,6 +193,10 @@
           <label for="Last Name">Last name</label>
           <input id="fullname" name="Last Name" type="text" required>
 
+          <label for="dob">Date of Birth:</label>
+<input type="date" id="dob" name="Date of Birth" required>
+
+
       <label>Address</label>
       <input type="text" name="Address" required>
 
@@ -204,6 +208,18 @@
 
       <label>Email</label>
       <input type="email" name="Email" required>
+
+      <!--Emergency Contact Information -->
+
+<h4>Emergency Contact Details</h4>
+<label for="emergency-name">Contact Name:</label>
+<input type="text" id="emergency-name" name="Emergency Contact Name" placeholder="Full Name" required>
+
+<label for="emergency-relation">Relationship:</label>
+<input type="text" id="emergency-relation" name="Emergency Contact Relationship" placeholder="Relation (e.g., Brother, Friend)" required>
+
+<label for="emergency-phone">Contact Number:</label>
+<input type="text" id="emergency-phone" name="Emergency Contact Number" placeholder="Phone Number" required>
 
       <!-- Legal Info -->
       <h3>Legal Information</h3>
@@ -219,17 +235,25 @@
         <label><input type="radio" name="UK Driving Licence" value="No">No</label>
       </div>
 
-      <label>Points in DVL Summary (Enter if any)</label>
-      <input type="text" name="Points in DVLA Summary">
+      <label for="licence-expiry">Driving Licence Expiry Date:</label>
+<input type="date" id="licence-expiry" name="Licence Expiry Date" required>
 
-      <label>Licence Suspended</label>
+       <label for="licence-category">Licence Category (e.g., B, C1, C, CE):</label>
+<input type="text" id="licence-category" name="Licence Category" placeholder="Enter your licence category" required>
+
+      <label>Points in DVLA Summary (Enter if any)</label>
+      <input type="text" name="Points in DVLA Summary">
+      <h4>DVLA / Background Check Consent</h4>
+<label><input type="checkbox" name="DVLA Consent" required> I give consent for Baaz Sameday Ltd to carry out DVLA licence and background checks.</label>
+
+
+      <h3></h3><label>Licence Suspended</label>
       <div class="radio-group">
         <label><input type="radio" name="Licence Suspended" value="Yes">Yes</label>
         <label><input type="radio" name="Licence Suspended" value="No">No</label>
       </div>
 
-      <label>If Yes, how many times?</label>
-      <input type="text" name="Suspension Count">
+    
 
       <label>Valid DBS Check</label>
       <div class="radio-group">
@@ -244,15 +268,7 @@
       </div>
 
       <!-- Experience -->
-      <h3>Experience and Work Conditions</h3>
-      <label>Previous experience as delivery driver</label>
-      <div class="radio-group">
-        <label><input type="radio" name="Previous Experience" value="Yes">Yes</label>
-        <label><input type="radio" name="Previous Experience" value="No">No</label>
-      </div>
-
-      <label>If Yes, how many years?</label>
-      <input type="text" name="Experience Years">
+      
 
       <label>Confident using any app or used earlier</label>
       <textarea name="App Experience" rows="2"></textarea>
@@ -294,14 +310,65 @@
         <label><input type="radio" name="Professional Communication" value="Yes">Yes</label>
         <label><input type="radio" name="Professional Communication" value="No">No</label>
       </div>
+    
+
+
 
       <!-- Final Checks -->
       <h3>Final Checks</h3>
-      <label>What time you can start</label>
+      <label>What time can start</label>
       <input type="text" name="Start Time">
 
-      <label>Any legal/medical issues affecting driving?</label>
-      <textarea name="Legal Medical Issues" rows="2"></textarea>
+
+      <!-- Shift Availability -->
+<h4>Shift Availability</h4>
+<p>Select days you are available:</p>
+<label><input type="checkbox" name="Availability" value="Monday" required> Monday</label>
+<label><input type="checkbox" name="Availability" value="Tuesday" required> Tuesday</label>
+<label><input type="checkbox" name="Availability" value="Wednesday" required> Wednesday</label>
+<label><input type="checkbox" name="Availability" value="Thursday" required> Thursday</label>
+<label><input type="checkbox" name="Availability" value="Friday" required> Friday</label>
+<label><input type="checkbox" name="Availability" value="Saturday" required> Saturday</label>
+<label><input type="checkbox" name="Availability" value="Sunday" required> Sunday</label>
+<br>
+<label><input type="checkbox" name="Nights" value="Yes" required> Available for Nights</label>
+<label><input type="checkbox" name="Weekends" value="Yes" required> Available for Weekends</label>
+
+<h4>Previous Experience</h4>
+<label for="previous-companies">List companies you've worked with as a driver:</label>
+<textarea id="previous-companies" name="Previous Companies" placeholder="Company names, locations..." rows="3" required></textarea>
+
+<label for="total-exp">Total Years of Experience:</label>
+<input type="number" id="total-exp" name="Total Years of Experience" placeholder="e.g., 3" min="0" required>
+
+
+      
+
+      <h4>Medical Declaration</h4>
+<p>Do you have any medical conditions that may affect your ability to drive safely?</p>
+<label><input type="radio" name="Medical Condition" value="Yes" required> Yes</label>
+<label><input type="radio" name="Medical Condition" value="No" required> No</label>
+
+<textarea name="Medical Condition Details" placeholder="If yes, please provide details..." rows="3" required></textarea>
+
+
+<h4>Declaration and Signature</h4>
+<p>
+I confirm that the information provided is true and complete. I consent to Baaz Sameday Ltd verifying my driving licence and conducting background checks where required. I understand that providing false information may result in termination of employment or contract.
+</p>
+
+<label for="declaration-name">Full Name:</label>
+<input type="text" id="declaration-name" name="Declaration Name" placeholder="Full Name" required>
+
+<label for="declaration-date">Submit Date:</label>
+<input type="date" id="declaration-date" name="Declaration Date" required>
+
+<label><input type="checkbox" name="Signature Confirmed" required> I confirm this serves as my digital signature.</label>
+
+      <h4>Data Protection & Privacy Notice</h4>
+<p>
+Your personal data will be stored securely and processed in accordance with UK GDPR for recruitment and compliance purposes only.
+</p>
 
       <button type="submit">Submit Application</button>
     </form>
@@ -311,5 +378,3 @@
 
 
 </html>
-
-
